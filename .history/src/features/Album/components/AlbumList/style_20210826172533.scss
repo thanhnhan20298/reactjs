@@ -1,0 +1,7 @@
+.album__list{
+    display: flex;
+
+    & > li{
+    list-style-type: none;
+    }
+}
