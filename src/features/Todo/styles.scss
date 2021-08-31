@@ -1,0 +1,25 @@
+.show-all{
+    background-color: yellow;
+    border: 1px solid transparent;
+    font-size: 24px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.show-completed{
+    background-color: red;
+    border: 1px solid transparent;
+    font-size: 24px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.show-new{
+    background-color: blue;
+    border: 1px solid transparent;
+    font-size: 24px;
+    margin: 0 10px;
+    border-radius: 4px;
+    color: white;
+    cursor:pointer;
+}
