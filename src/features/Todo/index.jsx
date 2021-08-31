@@ -35,7 +35,7 @@ function TodoFeature(props) {
         {
             id:2,
             title:"Cook",
-            status:"completed",
+            status:"new",
         },
         {
             id:3,
@@ -64,18 +64,14 @@ function TodoFeature(props) {
 
     const handleShowAllClick = () => {
         setFilterStatus("all");
-        console.log(123)
     }
 
     const handleShowCompletedClick = () => {
         setFilterStatus("completed");
-        console.log(123)
-
     }
 
     const handleShowNewClick = () => {
         setFilterStatus("new");
-        console.log(123)
     }
 
     const renderedTodoList = todoList.filter(todo => filterStatus === "all" || filterStatus === todo.status);
@@ -89,11 +85,11 @@ function TodoFeature(props) {
             {/*thay đổi state completed new */}
             {/* <TodoList todoList={todoList} onTodoClick ={handleTodoClick}/>*/}
 
-            {/* truyền cho thằng con để render filter */}
+            {/* truyền props đã filter cho thằng con để render */}
             <TodoList todoList={renderedTodoList} onTodoClick ={handleTodoClick}/> 
             <button className="show-all" onClick = {handleShowAllClick}>Show All</button>
             <button className="show-completed" onClick = {handleShowCompletedClick}>Show Completed</button>
-            <button className="show-new" onClick = {handleShowNewClick}>Show All</button>
+            <button className="show-new" onClick = {handleShowNewClick}>Show New</button>
         </div>
     );
 }
