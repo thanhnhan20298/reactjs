@@ -1,12 +1,13 @@
-
 // import AlbumFeature from './features/Album';
-import TodoFeature from './features/Todo';
+import ColorBox from "./features/ColorChange";
+import TodoFeature from "./features/Todo";
 
 function App() {
   return (
     <div className="App">
-      <TodoFeature/>
+      <TodoFeature />
       {/* <AlbumFeature/> */}
+      <ColorBox />
     </div>
   );
 }

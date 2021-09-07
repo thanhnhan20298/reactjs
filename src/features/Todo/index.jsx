@@ -75,7 +75,7 @@ function TodoFeature(props) {
     }
 
     const renderedTodoList = todoList.filter(todo => filterStatus === "all" || filterStatus === todo.status);
-    console.log(renderedTodoList)
+    // console.log(renderedTodoList)
     return (
         <div>
             <h3>Todo List</h3>
